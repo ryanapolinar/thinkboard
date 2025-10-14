@@ -6,8 +6,11 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [daisyui],
+  plugins: [
+    daisyui,
+    '@tailwindcss/typography'
+  ],
   daisyui: {
-    themes: ["forest", "coffee"]
+    themes: ["bumblebee", "cyberpunk", "forest", "coffee"]
   }
 }
