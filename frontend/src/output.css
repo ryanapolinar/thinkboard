@@ -2142,16 +2142,12 @@ html {
   border-color: rgb(255 123 0 / var(--tw-border-opacity, 1));
 }
 
-.border-base-content\/10 {
-  border-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+.border-base-content\/5 {
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.05));
 }
 
 .border-primary\/30 {
   border-color: var(--fallback-p,oklch(var(--p)/0.3));
-}
-
-.border-base-content\/5 {
-  border-color: var(--fallback-bc,oklch(var(--bc)/0.05));
 }
 
 .bg-base-100 {
@@ -2164,9 +2160,9 @@ html {
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
 }
 
-.bg-base-300 {
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity, 1)));
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
 }
 
 .bg-primary\/10 {
@@ -2175,21 +2171,6 @@ html {
 
 .bg-primary\/20 {
   background-color: var(--fallback-p,oklch(var(--p)/0.2));
-}
-
-.bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity, 1)));
-}
-
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity, 1)));
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
 }
 
 .p-4 {
@@ -2283,6 +2264,11 @@ html {
   color: var(--fallback-bc,oklch(var(--bc)/0.7));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-error {
   --tw-text-opacity: 1;
   color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
@@ -2291,16 +2277,6 @@ html {
 .text-primary {
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)));
-}
-
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity, 1)));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .shadow-md {
@@ -2323,27 +2299,9 @@ html {
   transition-duration: 200ms;
 }
 
-.\[background\:radial-gradient\(125\%_125\%_at_50\%_10\%\2c \#000_60\%\2c \#00FF9D40_100\%\)\] {
-  background: radial-gradient(125% 125% at 50% 10%,#000 60%,#00FF9D40 100%);
-}
-
-.\[background\:radial-gradient\(125\%_125\%_at_50\%_10\%\2c \#000_60\%\2c \#ff990040_100\%\)\] {
-  background: radial-gradient(125% 125% at 50% 10%,#000 60%,#ff990040 100%);
-}
-
-.\[background\:radial-gradient\(125\%_125\%_at_50\%_10\%\2c \#362000_60\%\2c \#ff990040_100\%\)\] {
-  background: radial-gradient(125% 125% at 50% 10%,#362000 60%,#ff990040 100%);
-}
-
 .\[background\:radial-gradient\(125\%_125\%_at_50\%_10\%\2c \#aaa_60\%\2c \#ff990040_100\%\)\] {
   background: radial-gradient(125% 125% at 50% 10%,#aaa 60%,#ff990040 100%);
 }
-
-.\[background\:radial-gradient\(125\%_125\%_at_50\%_10\%\2c \#b52a00_60\%\2c \#ff990040_100\%\)\] {
-  background: radial-gradient(125% 125% at 50% 10%,#b52a00 60%,#ff990040 100%);
-}
-
-@plugin "@tailwindcss/typography";
 
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
